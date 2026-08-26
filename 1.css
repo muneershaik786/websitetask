@@ -1,0 +1,424 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  color: #333333;
+  background-color: #ffffff;
+}
+
+/* 1. Top Bar */
+.top-bar {
+  background-color: #9d1c52;
+  color: #ffffff;
+  padding: 6px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 11px;
+}
+
+.top-bar-left a {
+  color: #ffffff;
+  text-decoration: underline;
+}
+
+.top-bar-right {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+/* 2. Main Navigation Header */
+.main-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 60px;
+  background-color: #ffffff;
+}
+
+.logo-title {
+  color: #9d1c52;
+  font-size: 18px;
+  letter-spacing: 1px;
+}
+
+.nav-links a {
+  margin-left: 20px;
+  text-decoration: none;
+  color: #666666;
+  font-size: 14px;
+}
+
+/* 3. Announcement Bar */
+.announcement-bar {
+  background-color: #9ee6b8;
+  color: #000000;
+  text-align: center;
+  padding: 8px;
+  font-size: 12px;
+}
+
+/* 4. Hero Container */
+.hero-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  background-color: #f8f8f8;
+}
+
+.hero-image {
+  max-width: 1200px;
+  width: 100%;
+  height: auto;
+  display:block;
+}
+
+/* Page Control Headers */
+.page-title-container {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 60px 10px;
+  font-size: 13px;
+  color: #666;
+}
+
+.item-count-selector a {
+  margin: 0 4px;
+  text-decoration: none;
+  color: #333;
+}
+
+.item-count-selector a.active {
+  color: #9d1c52;
+  font-weight: bold;
+}
+
+.breadcrumbs a {
+  text-decoration: none;
+  color: #666;
+}
+
+.main-category-heading {
+  text-align: center;
+  font-size: 28px;
+  font-weight: normal;
+  margin: 10px 0 30px;
+}
+
+/* Layout: Sidebar & Products */
+.shop-container {
+  display: flex;
+  padding: 0 60px 40px;
+  gap: 40px;
+}
+
+.sidebar {
+  width: 220px;
+  flex-shrink: 0;
+}
+
+.filter-group {
+  margin-bottom: 25px;
+  border-bottom: 1px solid #eee;
+  padding-bottom: 15px;
+}
+
+.filter-group h3 {
+  font-size: 15px;
+  margin-bottom: 12px;
+  color: #333;
+}
+
+.filter-group label {
+  display: block;
+  font-size: 12px;
+  color: #666;
+  margin-bottom: 8px;
+  cursor: pointer;
+}
+
+.more-link {
+  font-size: 12px;
+  color: #666;
+  text-decoration: none;
+}
+
+/* Product Cards Grid */
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  flex: 1;
+}
+
+.product-card {
+  border: 1px solid #e5e5e5;
+  padding: 15px;
+  position: relative;
+  text-align: left;
+}
+
+.save-badge {
+  position: absolute;
+  top: -10px;
+  right: -10px;
+  background: white;
+  border: 1px solid #9d1c52;
+  color: #9d1c52;
+  border-radius: 50%;
+  width: 45px;
+  height: 45px;
+  font-size: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  line-height: 1.1;
+  z-index: 2;
+}
+
+.card-image img {
+  width: 100%;
+  height: auto;
+  margin-bottom: 15px;
+}
+
+.product-card h4 {
+  font-size: 14px;
+  font-weight: normal;
+  margin-bottom: 8px;
+  color: #333;
+}
+
+.product-card .price {
+  font-size: 14px;
+  color: #9d1c52;
+  margin-bottom: 5px;
+}
+
+.product-card del {
+  color: #999;
+  font-size: 12px;
+  margin-left: 5px;
+}
+
+.product-card .vendor {
+  font-size: 11px;
+  color: #888;
+  margin-bottom: 15px;
+}
+
+.btn-add {
+  background-color: #9d1c52;
+  color: #ffffff;
+  border: none;
+  padding: 10px;
+  width: 100%;
+  cursor: pointer;
+  font-size: 13px;
+}
+
+/* Brands Section */
+.brands-section {
+  text-align: center;
+  padding: 40px 0;
+  border-top: 1px solid #eee;
+}
+
+.brands-section h2 {
+  font-size: 24px;
+  font-weight: normal;
+  margin-bottom: 25px;
+}
+
+.brand-logos {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  font-weight: bold;
+  color: #444;
+}
+
+/* Footer */
+.main-footer {
+  background-color: #fafafa;
+  border-top: 1px solid #eee;
+  padding: 40px 60px;
+}
+
+.footer-columns {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-col h4 {
+  font-size: 14px;
+  margin-bottom: 15px;
+}
+
+.footer-col ul {
+  list-style: none;
+}
+
+.footer-col ul li {
+  margin-bottom: 8px;
+}
+
+.footer-col ul li a {
+  text-decoration: none;
+  color: #666;
+  font-size: 12px;
+}
+
+.newsletter-form {
+  display: flex;
+  margin: 10px 0;
+}
+
+.newsletter-form input {
+  padding: 8px;
+  border: 1px solid #ccc;
+  width: 200px;
+}
+
+.newsletter-form button {
+  background-color: #9d1c52;
+  color: white;
+  border: none;
+  padding: 8px 15px;
+  cursor: pointer;
+}
+
+.social-icons {
+  display: flex;
+  gap: 15px;
+  margin-top: 10px;
+  color: #9d1c52;
+}
+
+/* Our Brands Styling */
+.our-brands-section {
+  width: 100%;
+  max-width: 1200px;
+  margin: 40px auto;
+  padding: 20px;
+  text-align: center;
+  background-color: #ffffff;
+}
+
+.brands-title {
+  font-family: 'Playfair Display', Georgia, serif;
+  font-size: 32px;
+  font-weight: 400;
+  color: #222222;
+  margin-bottom: 40px;
+}
+
+.brands-grid {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.brand-item {
+  flex: 1;
+  min-width: 180px;
+  max-width: 240px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.brand-item img {
+  max-width: 100%;
+  height: auto;
+  object-fit: contain;
+  transition: transform 0.3s ease;
+}
+
+/* Optional hover effect */
+.brand-item img:hover {
+  transform: scale(1.05);
+}
+
+/* Footer Bottom Bar Styles */
+.footer-bottom-bar {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 30px 20px;
+  background-color: #ffffff;
+  gap: 18px;
+  font-family: Arial, sans-serif;
+}
+
+/* Custom Dropdown Styling */
+.currency-selector-container {
+  display: flex;
+  justify-content: center;
+}
+
+.currency-dropdown {
+  padding: 8px 16px;
+  font-size: 13px;
+  color: #555555;
+  background-color: #ffffff;
+  border: 1px solid #dcdcdc;
+  border-radius: 2px;
+  outline: none;
+  cursor: pointer;
+  appearance: auto;
+  min-width: 90px;
+  text-align: center;
+}
+
+.currency-dropdown:hover {
+  border-color: #aaaaaa;
+}
+
+/* Copyright Text Styling */
+.copyright-text {
+  font-size: 12px;
+  color: #777777;
+  letter-spacing: 0.3px;
+  margin: 0;
+}
+
+/* Payment Icons Grid Layout */
+.payment-icons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.payment-icons img {
+  height: 24px;
+  width: auto;
+  border-radius: 3px;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.08);
+}
+
+
+
+.thank-you-message {
+  display: none;
+  font-size: 11px;
+  color: #555555;
+  margin-top: 8px;
+  text-align: left;
+}
+
+.thank-you-message a {
+  color: #9d1c52;
+  text-decoration: underline;
+}
